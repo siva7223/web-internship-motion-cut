@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bucket List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Bucket List</h1>
+    <ul>
+      <li>
+        <span class="bucket-item">Buy laptop with top specs</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+      <li>
+        <span class="bucket-item">Buy Entire Marvel comics</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+      <li>
+        <span class="bucket-item">Learn 3D modeling</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Complete course in C# programming</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Learn Unity Engine and Create my own game</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Build my own PC with max specifications</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Visit Japan </span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Do goku's cosplay and say kamehamehaaa.... in japan anime festival</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Play with snowballs</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Get a job with good salary</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+       <li>
+        <span class="bucket-item">Rewatch a TV show called Breaking bad</span>
+        <button class="complete-btn" onclick="markCompleted(this)">Complete</button>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    function markCompleted(button) {
+      const listItem = button.parentElement;
+      listItem.classList.toggle('completed');
+    }
+  </script>
+</body>
+</html>
