@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Cover</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('aesthetic 5.jpg') no-repeat center center/cover;
+}
+
+{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?nature,scenery') no-repeat center center/cover;
+        }
+        .magazine-cover {
+            position: relative;
+            width: 400px;
+            height: 600px;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .cover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .magazine-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            position: relative;
+            margin-top: 50px;
+        }
+        .tagline {
+            font-size: 18px;
+            font-weight: 300;
+            position: relative;
+        }
+        .headlines {
+            position: relative;
+            margin-top: 40px;
+        }
+        .headline {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 10px 20px;
+        }
+        .subscribe-btn {
+            position: relative;
+            background: #e63946;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        .subscribe-btn:hover {
+            background: #c92a38;
+        }
+    </style>
+</head>
+<body>
+    <div class="magazine-cover">
+        <div class="background-overlay"></div>
+        <img src="aesthetic 4.jpg" alt="Magazine Cover" class="cover-image">
+        <h2 class="magazine-title">LOUIS VUITTON</h2>
+        <h2 class="tagline">The Ultimate Fashion Guide</h2>
+        <div class="headlines">
+            <h3 class="headline">The Art of Layering: Mastering Winter Style</h3>
+            <h3 class="headline">10 Must-Have Accessories for 2025</h3>
+            <h3 class="headline">Exclusive: Interview with a Top Designer</h3>
+        </div>
+        <button class="subscribe-btn">Subscribe Now</button>
+    </div>
+</body>
+</html>
